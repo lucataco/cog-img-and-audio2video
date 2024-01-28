@@ -1,0 +1,14 @@
+# Configuration for Cog ⚙️
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  gpu: false
+  python_version: "3.11"
+
+  # a list of packages in the format <package-name>==<version>
+  python_packages:
+    - "moviepy"
+    - "pillow"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
